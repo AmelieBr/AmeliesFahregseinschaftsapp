@@ -1,0 +1,15 @@
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\Fahrgemeinschaftsapp\ShareARide\ShareARide.SQL\bin\Debug\net6.0\ShareARide.SQL.deps.json
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\Fahrgemeinschaftsapp\ShareARide\ShareARide.SQL\bin\Debug\net6.0\ShareARide.SQL.dll
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\Fahrgemeinschaftsapp\ShareARide\ShareARide.SQL\bin\Debug\net6.0\ref\ShareARide.SQL.dll
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\Fahrgemeinschaftsapp\ShareARide\ShareARide.SQL\bin\Debug\net6.0\ShareARide.SQL.pdb
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\Fahrgemeinschaftsapp\ShareARide\ShareARide.SQL\bin\Debug\net6.0\ShareARide.Models.dll
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\Fahrgemeinschaftsapp\ShareARide\ShareARide.SQL\bin\Debug\net6.0\ShareARide.Models.pdb
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\Fahrgemeinschaftsapp\ShareARide\ShareARide.SQL\obj\Debug\net6.0\ShareARide.SQL.csproj.AssemblyReference.cache
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\Fahrgemeinschaftsapp\ShareARide\ShareARide.SQL\obj\Debug\net6.0\ShareARide.SQL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\Fahrgemeinschaftsapp\ShareARide\ShareARide.SQL\obj\Debug\net6.0\ShareARide.SQL.AssemblyInfoInputs.cache
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\Fahrgemeinschaftsapp\ShareARide\ShareARide.SQL\obj\Debug\net6.0\ShareARide.SQL.AssemblyInfo.cs
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\Fahrgemeinschaftsapp\ShareARide\ShareARide.SQL\obj\Debug\net6.0\ShareARide.SQL.csproj.CoreCompileInputs.cache
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\Fahrgemeinschaftsapp\ShareARide\ShareARide.SQL\obj\Debug\net6.0\ShareARide.SQL.csproj.CopyComplete
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\Fahrgemeinschaftsapp\ShareARide\ShareARide.SQL\obj\Debug\net6.0\ShareARide.SQL.dll
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\Fahrgemeinschaftsapp\ShareARide\ShareARide.SQL\obj\Debug\net6.0\ref\ShareARide.SQL.dll
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\Fahrgemeinschaftsapp\ShareARide\ShareARide.SQL\obj\Debug\net6.0\ShareARide.SQL.pdb
