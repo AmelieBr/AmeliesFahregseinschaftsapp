@@ -10,3 +10,15 @@ C:\Users\ABR\OneDrive - TecAlliance\Dokumente\Fahrgemeinschaftsapp\ShareARide\Sh
 C:\Users\ABR\OneDrive - TecAlliance\Dokumente\Fahrgemeinschaftsapp\ShareARide\ShareARide.Models\obj\Debug\net6.0\ShareARide.Models.dll
 C:\Users\ABR\OneDrive - TecAlliance\Dokumente\Fahrgemeinschaftsapp\ShareARide\ShareARide.Models\obj\Debug\net6.0\ref\ShareARide.Models.dll
 C:\Users\ABR\OneDrive - TecAlliance\Dokumente\Fahrgemeinschaftsapp\ShareARide\ShareARide.Models\obj\Debug\net6.0\ShareARide.Models.pdb
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\AmeliesFahrgemeinschaftsapp\ShareARide\ShareARide.Models\bin\Debug\net6.0\ShareARide.Models.deps.json
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\AmeliesFahrgemeinschaftsapp\ShareARide\ShareARide.Models\bin\Debug\net6.0\ShareARide.Models.dll
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\AmeliesFahrgemeinschaftsapp\ShareARide\ShareARide.Models\bin\Debug\net6.0\ref\ShareARide.Models.dll
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\AmeliesFahrgemeinschaftsapp\ShareARide\ShareARide.Models\bin\Debug\net6.0\ShareARide.Models.pdb
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\AmeliesFahrgemeinschaftsapp\ShareARide\ShareARide.Models\obj\Debug\net6.0\ShareARide.Models.csproj.AssemblyReference.cache
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\AmeliesFahrgemeinschaftsapp\ShareARide\ShareARide.Models\obj\Debug\net6.0\ShareARide.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\AmeliesFahrgemeinschaftsapp\ShareARide\ShareARide.Models\obj\Debug\net6.0\ShareARide.Models.AssemblyInfoInputs.cache
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\AmeliesFahrgemeinschaftsapp\ShareARide\ShareARide.Models\obj\Debug\net6.0\ShareARide.Models.AssemblyInfo.cs
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\AmeliesFahrgemeinschaftsapp\ShareARide\ShareARide.Models\obj\Debug\net6.0\ShareARide.Models.csproj.CoreCompileInputs.cache
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\AmeliesFahrgemeinschaftsapp\ShareARide\ShareARide.Models\obj\Debug\net6.0\ShareARide.Models.dll
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\AmeliesFahrgemeinschaftsapp\ShareARide\ShareARide.Models\obj\Debug\net6.0\ref\ShareARide.Models.dll
+C:\Users\ABR\OneDrive - TecAlliance\Dokumente\AmeliesFahrgemeinschaftsapp\ShareARide\ShareARide.Models\obj\Debug\net6.0\ShareARide.Models.pdb

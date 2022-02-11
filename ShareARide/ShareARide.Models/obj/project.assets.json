@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\Fahrgemeinschaftsapp\\ShareARide\\ShareARide.Models\\ShareARide.Models.csproj",
+      "projectUniqueName": "C:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\AmeliesFahrgemeinschaftsapp\\ShareARide\\ShareARide.Models\\ShareARide.Models.csproj",
       "projectName": "ShareARide.Models",
-      "projectPath": "c:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\Fahrgemeinschaftsapp\\ShareARide\\ShareARide.Models\\ShareARide.Models.csproj",
+      "projectPath": "C:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\AmeliesFahrgemeinschaftsapp\\ShareARide\\ShareARide.Models\\ShareARide.Models.csproj",
       "packagesPath": "C:\\Users\\ABR\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\Fahrgemeinschaftsapp\\ShareARide\\ShareARide.Models\\obj\\",
+      "outputPath": "C:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\AmeliesFahrgemeinschaftsapp\\ShareARide\\ShareARide.Models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ABR\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

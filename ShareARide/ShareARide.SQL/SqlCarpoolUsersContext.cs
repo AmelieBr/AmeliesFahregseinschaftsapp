@@ -4,6 +4,10 @@ using System.Data.SqlClient;
 namespace ShareARide.SQL;
 public class SqlCarpoolUsersContext : ICarpoolUsersContext
 {
+    /// <summary>
+    /// Method to get all CarpoolUsers
+    /// </summary>
+    /// <returns>Returns a List with all CarpoolUsers</returns>
     public async Task<List<CarpoolUsers>> GetAllAsync(){
         List<CarpoolUsers> carpoolUserslist = new List<CarpoolUsers>();
         using (SqlConnection con = new SqlConnection(Config.ConnectionString))
@@ -25,6 +29,11 @@ public class SqlCarpoolUsersContext : ICarpoolUsersContext
         }
         return carpoolUserslist;
     }
+    /// <summary>
+    /// Method to get all Users (passengers) of a Carpool
+    /// </summary>
+    /// <param name="carpoolID">ID of the Carpool</param>
+    /// <returns>Returns a List with matching CarpoolUsers</returns>
 
     public async Task<List<CarpoolUsers>> GetSingleCarpoolUsersAsync(int carpoolID)
     {
@@ -49,6 +58,11 @@ public class SqlCarpoolUsersContext : ICarpoolUsersContext
         return carpoolUserslist;
     }
 
+    /// <summary>
+    /// Method to get all Carpools, the User takes part in
+    /// </summary>
+    /// <param name="userID">ID of the User</param>
+    /// <returns>Returns a List with matching CarpoolUsers</returns>
     public async Task<List<CarpoolUsers>> GetSingleUserinCarpoolsAsync(int userID)
     {
         List<CarpoolUsers> carpoolUserslist = new List<CarpoolUsers>();
@@ -72,26 +86,11 @@ public class SqlCarpoolUsersContext : ICarpoolUsersContext
         return carpoolUserslist;
     }
 
-    public async Task<CarpoolUsers>GetSingleUserinSingleCarpoolAsync(int userID, int carpoolID){
-        CarpoolUsers carpoolUser = new CarpoolUsers();
-        using (SqlConnection con = new SqlConnection(Config.ConnectionString))
-        {
-            con.Open();
-            //
-            // The following code uses an SqlCommand based on the SqlConnection.
-            //
-            using (SqlCommand command = new SqlCommand($"SELECT * FROM CarpoolUsers WHERE UserID = {userID} AND CarpoolID = {carpoolID}", con))
-            using (SqlDataReader reader = await command.ExecuteReaderAsync())
-            {
-                while (reader.Read())
-                {
-                    SqlCarpoolUsersreader(carpoolUser, reader);
-                }
-            }
-        }
-        return carpoolUser;
-    }
-
+    /// <summary>
+    /// Method to add a CarpoolUser
+    /// </summary>
+    /// <param name="carpooluser"></param>
+    /// <returns>Returns the added Carpooluser</returns>
     public async Task<CarpoolUsers> AddCarpoolUserAsync(CarpoolUsers carpoolUser)
     {
         using (SqlConnection con = new SqlConnection(Config.ConnectionString))
@@ -105,6 +104,13 @@ public class SqlCarpoolUsersContext : ICarpoolUsersContext
         }
         return carpoolUser;
     }
+
+
+    /// <summary>
+    /// Method to delete all Users of a Carpool
+    /// </summary>
+    /// <param name="carpoolID">ID of Carpool</param>
+    /// <returns>Returns a List with the deleted CarpoolUsers</returns>
 
     public async Task<List<CarpoolUsers>> DeleteSingleCarpoolUsersAsync(int carpoolID)
     {
@@ -131,7 +137,11 @@ public class SqlCarpoolUsersContext : ICarpoolUsersContext
         return deletedCarpoolUserlist;
     }
 
-
+    /// <summary>
+    /// Mehtod to delete a User out of all Carpools
+    /// </summary>
+    /// <param name="userID">ID of the User</param>
+    /// <returns>A List with all deleted Carpoolusers</returns>
     public async Task<List<CarpoolUsers>> DeleteSingleUserinCarpoolsAsync(int userID)
     {
         List<CarpoolUsers> deletedCarpoolUserlist = new List<CarpoolUsers>();
@@ -157,6 +167,12 @@ public class SqlCarpoolUsersContext : ICarpoolUsersContext
         return deletedCarpoolUserlist;
     }
 
+    /// <summary>
+    /// Method to delete a specific CarpoolUser
+    /// </summary>
+    /// <param name="userID">ID of the User</param>
+    /// <param name="carpoolID">ID of the Carpool</param>
+    /// <returns>Returns the deleted CarpoolUser</returns>
 
     public async Task<CarpoolUsers> DeleteSingleUserinSingleCarpoolAsync(int userID, int carpoolID)
     {

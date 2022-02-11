@@ -13,6 +13,17 @@ public interface ICarpoolsContext
     /// <returns>Retruns a Carpoolobject</returns>
     public Task<Carpools> GetSingleAsync(int id);
 
+
+    /// <summary>
+    /// Method to get a Carpool and its users
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns>Object, which combines Carpool and UserList</returns>
+
+    public Task<UsersJoinCarpool> GetCarpoolandUser(int id);
+
+    public Task<DriverJoinCarpool> GetCarpoolandDriver(int id);
+
     /// <summary>
     /// Forces SqlCarpoolsContext to implement this method to add a Carpool
     /// </summary>
@@ -31,5 +42,7 @@ public interface ICarpoolsContext
     /// <param name="id">ID of the Carpool, which will be deleted</param>
     /// <returns>Returns the deleted Carpool</returns>
     public Task<Carpools> DeleteaCarpoolAsync(int id);
+
+    public Task<Carpools> DeleteDriverfromCarpoolsAsync(int driverUserID);
 
 }

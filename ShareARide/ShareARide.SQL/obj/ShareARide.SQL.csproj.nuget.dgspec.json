@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\Fahrgemeinschaftsapp\\ShareARide\\ShareARide.SQL\\ShareARide.SQL.csproj": {}
+    "C:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\AmeliesFahrgemeinschaftsapp\\ShareARide\\ShareARide.SQL\\ShareARide.SQL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\Fahrgemeinschaftsapp\\ShareARide\\ShareARide.Models\\ShareARide.Models.csproj": {
+    "C:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\AmeliesFahrgemeinschaftsapp\\ShareARide\\ShareARide.Models\\ShareARide.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\Fahrgemeinschaftsapp\\ShareARide\\ShareARide.Models\\ShareARide.Models.csproj",
+        "projectUniqueName": "C:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\AmeliesFahrgemeinschaftsapp\\ShareARide\\ShareARide.Models\\ShareARide.Models.csproj",
         "projectName": "ShareARide.Models",
-        "projectPath": "C:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\Fahrgemeinschaftsapp\\ShareARide\\ShareARide.Models\\ShareARide.Models.csproj",
+        "projectPath": "C:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\AmeliesFahrgemeinschaftsapp\\ShareARide\\ShareARide.Models\\ShareARide.Models.csproj",
         "packagesPath": "C:\\Users\\ABR\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\Fahrgemeinschaftsapp\\ShareARide\\ShareARide.Models\\obj\\",
+        "outputPath": "C:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\AmeliesFahrgemeinschaftsapp\\ShareARide\\ShareARide.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ABR\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -52,18 +52,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\Fahrgemeinschaftsapp\\ShareARide\\ShareARide.SQL\\ShareARide.SQL.csproj": {
+    "C:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\AmeliesFahrgemeinschaftsapp\\ShareARide\\ShareARide.SQL\\ShareARide.SQL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\Fahrgemeinschaftsapp\\ShareARide\\ShareARide.SQL\\ShareARide.SQL.csproj",
+        "projectUniqueName": "C:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\AmeliesFahrgemeinschaftsapp\\ShareARide\\ShareARide.SQL\\ShareARide.SQL.csproj",
         "projectName": "ShareARide.SQL",
-        "projectPath": "C:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\Fahrgemeinschaftsapp\\ShareARide\\ShareARide.SQL\\ShareARide.SQL.csproj",
+        "projectPath": "C:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\AmeliesFahrgemeinschaftsapp\\ShareARide\\ShareARide.SQL\\ShareARide.SQL.csproj",
         "packagesPath": "C:\\Users\\ABR\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\Fahrgemeinschaftsapp\\ShareARide\\ShareARide.SQL\\obj\\",
+        "outputPath": "C:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\AmeliesFahrgemeinschaftsapp\\ShareARide\\ShareARide.SQL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ABR\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -78,8 +78,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\Fahrgemeinschaftsapp\\ShareARide\\ShareARide.Models\\ShareARide.Models.csproj": {
-                "projectPath": "C:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\Fahrgemeinschaftsapp\\ShareARide\\ShareARide.Models\\ShareARide.Models.csproj"
+              "C:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\AmeliesFahrgemeinschaftsapp\\ShareARide\\ShareARide.Models\\ShareARide.Models.csproj": {
+                "projectPath": "C:\\Users\\ABR\\OneDrive - TecAlliance\\Dokumente\\AmeliesFahrgemeinschaftsapp\\ShareARide\\ShareARide.Models\\ShareARide.Models.csproj"
               }
             }
           }
@@ -114,7 +114,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

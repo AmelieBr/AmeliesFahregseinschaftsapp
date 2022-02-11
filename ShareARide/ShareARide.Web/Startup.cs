@@ -19,6 +19,7 @@ namespace ShareARide.Web
             services.AddSingleton<ICarpoolsContext, SqlCarpoolsContext>();
             services.AddSingleton<IUsersContext, SqlUsersContext>();
             services.AddSingleton<ICarpoolUsersContext, SqlCarpoolUsersContext>();
+            services.AddSingleton<INotificationsContext, SqlNotificationsContext>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

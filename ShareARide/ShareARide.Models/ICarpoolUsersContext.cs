@@ -23,14 +23,6 @@ public interface ICarpoolUsersContext
     public Task<List<CarpoolUsers>> GetSingleUserinCarpoolsAsync(int userid);
 
     /// <summary>
-    /// Forces SqlCarpoolUsersContext to implement this method to get a Carpools, a single User takes part in
-    /// </summary>
-    /// <param name="userid">ID of the User</param>
-    /// <param name="carpoolid">ID of the Carpool</param>
-    /// <returns>Returns a CarpoolUsersobject with the matching Carpool and User</returns>
-    public Task<CarpoolUsers> GetSingleUserinSingleCarpoolAsync(int userid, int carpoolid);
-
-    /// <summary>
     /// Forces SqlCarpoolUsersContext to implement this method to match a User with a Carpool, who is then a passenger
     /// </summary>
     /// <param name="carpooluser">CarpoolUsers object with Carpoolid and Userid</param>

@@ -8,18 +8,26 @@ using Microsoft.AspNetCore.Mvc;
 //using Microsoft.EntityFrameworkCore;
 using ShareARide.Models;
 
-namespace ShareARide.Controllers
+namespace ShareARide.Controllers 
 {
+    
     [Route("api/carpools")]
     [ApiController]
     public class CarpoolsController : ControllerBase
     {
         private readonly ICarpoolsContext _context;
+        private readonly INotificationsContext _contextNotification;
+        private readonly ICarpoolUsersContext _contextCarpoolUser;
 
-        public CarpoolsController(ICarpoolsContext context)
+        public CarpoolsController(ICarpoolsContext context, INotificationsContext contextNotification, ICarpoolUsersContext contextCarpoolUser)
         {
             _context = context;
+            _contextNotification = contextNotification;
+            _contextCarpoolUser = contextCarpoolUser;
+
         }
+
+        
 
         // Get: api/get --> get all Carpools
         [HttpGet]
@@ -42,11 +50,25 @@ namespace ShareARide.Controllers
 
             return carpool;
         }
+        // GET: api/Carpools/x --> Get one Carpool with ID with adiitional Information
+        [HttpGet("Get a single Carpool and the CarpoolUsers/{id}")]
+        public async Task<UsersJoinCarpool> GetCarpoolandUser(int id)
+        {
+            UsersJoinCarpool usersincarpool = await _context.GetCarpoolandUser(id);
+            return usersincarpool;
+        }
 
+        [HttpGet("Get a single Carpool and the CarpoolDriver/{id}")]
+        public async Task<DriverJoinCarpool> GetCarpoolandDriver(int id)
+        {
+            DriverJoinCarpool driverjoincarpool = await _context.GetCarpoolandDriver(id);
+            return driverjoincarpool;
+        }
         // POST: api/Carpools
         [HttpPost]
         public async Task<ActionResult<Carpools>> PostCarpool(Carpools carpool)
         {
+            await _contextNotification.MailCreateCarpoolAsync(carpool);
             return await _context.AddCarpoolAsync(carpool);
         }
 
@@ -54,7 +76,7 @@ namespace ShareARide.Controllers
         [HttpPut("{id}")]
         public async Task<Carpools> PutCarpool(int id, Carpools carpool)
         {
-
+            await _contextNotification.MailUpdateCarpoolAsync(carpool);
             return await _context.EditCarpoolAsync(id, carpool);
         }
         
@@ -64,6 +86,9 @@ namespace ShareARide.Controllers
         public async Task<Carpools> DeleteCarpool(int id)
         {
             
+            await _contextNotification.MailDeleteCarpoolAsync(id);
+            await _contextCarpoolUser.DeleteSingleCarpoolUsersAsync(id);
+
             return await _context.DeleteaCarpoolAsync(id);
         }
     }

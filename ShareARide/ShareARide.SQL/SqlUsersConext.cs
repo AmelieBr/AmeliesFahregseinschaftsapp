@@ -73,7 +73,7 @@ public class SqlUsersContext : IUsersContext
         }
         return userErstellen;
     }
-     /// <summary>
+    /// <summary>
     /// Method to edit an existing User via id
     /// </summary>
     /// <param name="id">ID of the User to edit</param>
@@ -119,6 +119,7 @@ public class SqlUsersContext : IUsersContext
         }
         return gelöschterUser;
     }
+
 
 
     /// <summary>

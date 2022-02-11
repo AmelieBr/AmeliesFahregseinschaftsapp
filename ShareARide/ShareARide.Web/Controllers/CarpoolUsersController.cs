@@ -15,10 +15,15 @@ namespace ShareARide.Controllers
     public class CarpoolUsersController : ControllerBase
     {
         private readonly ICarpoolUsersContext _context;
+        private readonly INotificationsContext _contextNotification;
+        private readonly ICarpoolsContext _contextCarpool;
 
-        public CarpoolUsersController(ICarpoolUsersContext context)
+        public CarpoolUsersController(ICarpoolUsersContext context, INotificationsContext contextNotification, ICarpoolsContext contextCarpool)
         {
             _context = context;
+            _contextNotification = contextNotification;
+            _contextCarpool = contextCarpool;
+
         }
 
         // Get: api/get --> get all CarpoolUsers
@@ -57,25 +62,12 @@ namespace ShareARide.Controllers
             return carpoolusers;
         }
 
-            // GET: api/CarpoolUsers/x/x --> Get one Carpool the User takes part in
-        [HttpGet("Get one Carpool used by on User/{Userid}/{Carpoolid}")]
-        public async Task<ActionResult<CarpoolUsers>> GetCarpoolUser(int userid, int carpoolid)
-        {
-            var carpooluser = await _context.GetSingleUserinSingleCarpoolAsync(userid, carpoolid);
-
-            if (carpooluser == null)
-            {
-                return NotFound();
-            }
-
-            return carpooluser;
-        }
-
-
         // POST: api/CarpoolUsers
-        [HttpPost]
+        [HttpPost("Post Carpooluser")]
         public async Task<ActionResult<CarpoolUsers>> PostCarpoolUser(CarpoolUsers carpooluser)
         {
+            Carpools carpool = new Carpools();
+            await _contextNotification.MailUserJoinCarpoolAsync(carpool, carpooluser);
             return await _context.AddCarpoolUserAsync(carpooluser);
         }
         
@@ -112,6 +104,9 @@ namespace ShareARide.Controllers
         [HttpDelete("{Userid}/{Carpoolid}")]
         public async Task<ActionResult<CarpoolUsers>> DeleteCarpoolUser(int userid, int carpoolid)
         {
+            Carpools carpool = new Carpools();
+            CarpoolUsers carpoolUser = new CarpoolUsers();
+            await _contextNotification.MailUserLeftCarpoolAsync(carpool, carpoolUser);
             var carpooluser = await _context.DeleteSingleUserinSingleCarpoolAsync(userid, carpoolid);
 
             if (carpooluser == null)
